@@ -1,0 +1,64 @@
+		React
+----------------------------------------------
+jsx es una mezcla entre el javascript y html
+npx create-react-app nombreapp // crear una app de react
+npm start // iniciar el servidor 
+
+		JavaScript
+
+-------Template String-------
+const nombreCompleto= `${nombre} ${apellido}` // se imprime el string tal cual como esta en las comillas 
+
+--------------	objects	----------------
+
+{nombre:objeto} crea el objeto con el nombre
+{nombreObjeto} crear el objeto con el nombre
+console.log({nombre:objeto}) imprimir objeto
+console.table({nombre:objeto}) imprimir objeto en tabla
+		Mutaciones
+persona=persona //Error solo se copia la referecia del objeto, no se crea uno nuevo
+persona2={...persona} // operador Spread de javascript permite clonar las propidades del objeto al nuevo 
+
+--------	Arreglos	----------
+no se recomineda usar el new array()
+no se recomienda usar push
+recordar el operador spred que extrae los atributos del objeto 
+
+-----------	funciones	--------
+funciones con funtions 
+funciones con funciones fecla `=>`
+
+----------- 	Desestructuracion de objetos 	------------
+es una forma de obtener atributos de un objeto con {atributo}
+
+
+
+
+
+
+-----		React 	-------------
+Componentes: un componente es una encapsulacion de codigo especializado
+Router: es una forma de cargar elementos de una pagina sin tener que recargarla
+
+Recordar que se puede eliminar todo los de src y creear el index.js npx create-react-app nombreapp // crear una app de react
+npm start // iniciar el servidor 
+
+para utilizar 'html' recordar que react trabaja con jsx
+
+los componentes en react se nombre con el estandar primeras en mayusculas EjemploApp.js
+	los componentes estan orientados a clases y a funciones 
+	*recomendacion trabajar los componentes por funciones (funcional Componentes)*
+
+
+Para el return de la funcion de los componentes html se puede utilizar Fragment que no deja un <div></div> vacios
+o lo mismo a tener el retunr de <></> React reconoce esto como un Fragment
+//import {Fragment} from "react";
+/*
+return (
+	<Fragment> 
+        	<h1> hola mundo</h1>
+        	<p>Esto es un primer componente de React</p>
+        </Fragment>) 
+*/
+
+
