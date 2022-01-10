@@ -49,7 +49,7 @@ los componentes en react se nombre con el estandar primeras en mayusculas Ejempl
 	los componentes estan orientados a clases y a funciones 
 	*recomendacion trabajar los componentes por funciones (funcional Componentes)*
 
-
+-------		Pasar componentes JSX ---------
 Para el return de la funcion de los componentes html se puede utilizar Fragment que no deja un <div></div> vacios
 o lo mismo a tener el retunr de <></> React reconoce esto como un Fragment
 //import {Fragment} from "react";
@@ -60,5 +60,29 @@ return (
         	<p>Esto es un primer componente de React</p>
         </Fragment>) 
 */
+
+--------	Propiedades 	-----------
+Las props son propiedades del padre al hijo entre componentes que se pueden enviar informacion
+<PrimeraApp saludo="hola" /> // 
+{saludo="saludo por defecto"} // si existe saludo lo muestra, si no el de defecto.
+
+--------	PropTypes 	-------------
+
+import PropTypes from 'prop-types';
+
+Tipos de propidades que se necesitan al momento de captar y enviar informacion
+(obliga a enviar propiedades correctas)
+PrimeraApp.propTypes = {
+    saludo: PropTypes.string.isRequired,
+    otra: PropTypes.number,
+}
+
+Shotcut importante
+rafcp // (react app funcional component props) crea estrutura base de las funcional components con props
+
+--------- 	Eventos ----------
+<button onClick={ejemploFuncion} >+1</button>
+Para los eventos hay una parte importante en las funciones que se debe escribir solo la referencia o variable de las funcion
+debido a que el codigo se ejecuta secuencialmente y al princio no funciona a menos que la funcion retorne otra funcion
 
 

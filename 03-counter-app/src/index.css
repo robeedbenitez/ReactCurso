@@ -5,3 +5,18 @@ html,body{
     font-size: 1.3rem;
     padding: 70px;
 }
+button{
+    background-color: #2C3E50;
+    color: white;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-right: 1em;
+
+}
+button:hover{
+    background-color:white;
+    color: #2C3E50;
+}
