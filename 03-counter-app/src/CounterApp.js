@@ -9,9 +9,7 @@ const CounterApp = ({valor=0})=>{
 
     // handleadd
     const handleSum = () =>setCounter((e)=>e+1);
-    
     const handleRes = () =>setCounter((e)=>e-1);
-    
     const handleReset = () => setCounter(0);
     
 

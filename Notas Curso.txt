@@ -86,3 +86,17 @@ Para los eventos hay una parte importante en las funciones que se debe escribir 
 debido a que el codigo se ejecuta secuencialmente y al princio no funciona a menos que la funcion retorne otra funcion
 
 
+---------	pruebas unitarias y de integracion	----
+npm run test // comando para correr las pruebas
+unitarias: pequeñas funcionalidades
+integracion: funcionalidades en conjunto
+
+caracteristicas
+facil de escribir , leer
+confiables
+rapidas 
+principalmnete unitarias
+
+AAA (Arrange o Arreglar/ Act o Actuar / Assert o Afirmar)
+se conoce como test suite
+

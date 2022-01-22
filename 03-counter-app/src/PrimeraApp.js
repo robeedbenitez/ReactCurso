@@ -5,8 +5,7 @@ const PrimeraApp= ({saludo, subtitulo}) => { //con desestructuracion se pueden o
         <> 
             <h1> {saludo} </h1>
             <p>{subtitulo}</p>
-        </>);      
-    
+        </>);    
 };
 
 PrimeraApp.propTypes = {
@@ -16,5 +15,6 @@ PrimeraApp.propTypes = {
 PrimeraApp.defaultProps = {
     subtitulo: 'Soy un subtitulo por defecto'
 }
+
 
 export default PrimeraApp;
